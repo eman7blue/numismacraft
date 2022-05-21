@@ -6,7 +6,7 @@
   "mixins": [
   ],
   "client": [
-    "ExampleMixin"
+    "io.github.eman7blue.numismacraft.mixin.ExampleMixin"
   ],
   "injectors": {
     "defaultRequire": 1

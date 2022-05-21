@@ -1,4 +1,4 @@
-package net.fabricmc.example;
+package io.github.eman7blue.numismacraft;
 
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;

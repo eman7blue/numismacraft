@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "io.github.eman7blue.numismacraft.ExampleMod"
     ]
   },
   "mixins": [

@@ -1,9 +1,7 @@
-# Fabric Example Mod
+# Coin Mod
 
-## Setup
-
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+Coin Mod is a mod for coin collecting in Minecraft made by Eman7blue. It is a tech mod.
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Coin Mod is licensed under GNU LGPLv3, a free and open-source license. For more information, please see the license file.
