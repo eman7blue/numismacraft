@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "numismacraft",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Numismacraft",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "Eman7blue"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/eman7blue/numismacraft",
+    "sources": "https://github.com/eman7blue/numismacraft"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/numismacraft/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.eman7blue.numismacraft.ExampleMod"
+      "io.github.eman7blue.numismacraft.Numismacraft"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "numismacraft.mixins.json"
   ],
 
   "depends": {
