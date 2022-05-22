@@ -1,7 +1,8 @@
 package io.github.eman7blue.numismacraft;
 
 import io.github.eman7blue.numismacraft.items.ItemsRegistry;
-import io.github.eman7blue.numismacraft.misc.LootTableRegistry;
+import io.github.eman7blue.numismacraft.loot.LootTableRegistry;
+import io.github.eman7blue.numismacraft.loot.RandomCoinLoot;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.block.Blocks;
@@ -26,6 +27,7 @@ public class Numismacraft implements ModInitializer {
 		// Proceed with mild caution.
 		ItemsRegistry.init();
 		LootTableRegistry.init();
-		LOGGER.info("Hello Fabric world!");
+		RandomCoinLoot.init();
+		LOGGER.info("Thank you for playing with Numismacraft (originally called Coin Mod)");
 	}
 }

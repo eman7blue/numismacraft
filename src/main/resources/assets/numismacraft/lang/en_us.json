@@ -1,5 +1,6 @@
 {
   "item.numismacraft.penny": "Penny",
+  "item.numismacraft.coin.tooltip": "Minted in %d",
   "item.numismacraft.nickel": "Nickel",
   "item.numismacraft.dime": "Dime",
   "item.numismacraft.quarter": "Quarter",

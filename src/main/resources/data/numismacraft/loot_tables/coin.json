@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "numismacraft:random_coin"
+            }
+          ],
+          "name": "numismacraft:penny"
+        }
+      ]
+    }
+  ]
+}
