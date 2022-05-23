@@ -1,5 +1,7 @@
 package io.github.eman7blue.numismacraft;
 
+import io.github.eman7blue.numismacraft.blocks.BlocksRegistry;
+import io.github.eman7blue.numismacraft.items.DefModItemGroup;
 import io.github.eman7blue.numismacraft.items.ItemsRegistry;
 import io.github.eman7blue.numismacraft.loot.LootTableRegistry;
 import io.github.eman7blue.numismacraft.loot.RandomCoinLoot;
@@ -17,15 +19,15 @@ public class Numismacraft implements ModInitializer {
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger("Numismacraft");
-	public static final ItemGroup NUMISMACRAFT_ITEMS = FabricItemGroupBuilder.create(
-					new Identifier("numismacraft", "general"))
-			.icon(() -> new ItemStack(Blocks.EMERALD_BLOCK)).build();
+
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		DefModItemGroup.init();
 		ItemsRegistry.init();
+		BlocksRegistry.init();
 		LootTableRegistry.init();
 		RandomCoinLoot.init();
 		LOGGER.info("Thank you for playing with Numismacraft (originally called Coin Mod)");

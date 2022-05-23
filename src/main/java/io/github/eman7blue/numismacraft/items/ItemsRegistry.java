@@ -5,7 +5,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-import static io.github.eman7blue.numismacraft.Numismacraft.NUMISMACRAFT_ITEMS;
+import static io.github.eman7blue.numismacraft.items.DefModItemGroup.NUMISMACRAFT_ITEMS;
 
 public final class ItemsRegistry {
     public static final Item penny = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));

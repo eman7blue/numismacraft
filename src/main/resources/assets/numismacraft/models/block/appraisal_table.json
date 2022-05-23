@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "numismacraft:block/appraisal_table"
+  }
+}
