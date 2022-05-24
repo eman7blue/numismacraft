@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "numismacraft:block/coin_bag",
+    "north": "numismacraft:block/coin_bag",
+    "south": "numismacraft:block/coin_bag",
+    "east": "numismacraft:block/coin_bag",
+    "west": "numismacraft:block/coin_bag",
+    "up": "numismacraft:block/coin_bag_top",
+    "down": "numismacraft:block/coin_bag_bottom"
+  }
+}

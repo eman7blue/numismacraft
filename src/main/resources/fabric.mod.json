@@ -20,7 +20,12 @@
   "entrypoints": {
     "main": [
       "io.github.eman7blue.numismacraft.Numismacraft"
+    ],
+
+    "client": [
+      "io.github.eman7blue.numismacraft.NumismacraftClient"
     ]
+
   },
   "mixins": [
     "numismacraft.mixins.json"

@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "numismacraft:block/coin_bag" }
+  }
+}
