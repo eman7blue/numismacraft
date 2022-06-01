@@ -18,7 +18,7 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 
 public class CoinBagBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, CoinBagInventory {
-    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(9, ItemStack.EMPTY);
+    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(108, ItemStack.EMPTY);
 
     public CoinBagBlockEntity(BlockPos pos, BlockState state) {
         super(BlocksRegistry.COIN_BAG_BLOCK_ENTITY, pos, state);

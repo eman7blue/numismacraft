@@ -1,9 +1,11 @@
 package io.github.eman7blue.numismacraft;
 
+import io.github.eman7blue.numismacraft.items.ItemCoin;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
@@ -16,14 +18,14 @@ public class CoinBagScreenHandler extends ScreenHandler {
     //The client will call the other constructor with an empty Inventory and the screenHandler will automatically
     //sync this empty inventory with the inventory on the server.
     public CoinBagScreenHandler(int syncId, PlayerInventory playerInventory) {
-        this(syncId, playerInventory, new SimpleInventory(9));
+        this(syncId, playerInventory, new SimpleInventory(108));
     }
 
     //This constructor gets called from the BlockEntity on the server without calling the other constructor first, the server knows the inventory of the container
     //and can therefore directly provide it as an argument. This inventory will then be synced to the client.
     public CoinBagScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory) {
         super(Numismacraft.COIN_BAG_SCREEN_HANDLER, syncId);
-        checkSize(inventory, 9);
+        checkSize(inventory, 108);
         this.inventory = inventory;
         //some inventories do custom logic when a player opens it.
         inventory.onOpen(playerInventory.player);
@@ -32,8 +34,8 @@ public class CoinBagScreenHandler extends ScreenHandler {
         //This will not render the background of the slots however, this is the Screens job
         int m, l;
         //Our inventory
-        for (m = 0; m < 3; ++m) {
-            for (l = 0; l < 3; ++l) {
+        for (m = 0; m < 9; ++m) {
+            for (l = 0; l < 12; ++l) {
                 this.addSlot(new Slot(inventory, l + m * 3, 62 + l * 18, 17 + m * 18));
             }
         }
@@ -80,5 +82,9 @@ public class CoinBagScreenHandler extends ScreenHandler {
         }
 
         return newStack;
+    }
+
+    protected boolean isCoin(ItemStack itemStack) {
+        return itemStack.getItem() instanceof ItemCoin;
     }
 }
