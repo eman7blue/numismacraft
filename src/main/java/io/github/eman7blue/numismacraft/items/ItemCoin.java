@@ -20,7 +20,9 @@ public class ItemCoin extends Item {
         NbtCompound nbtCompound = itemStack.getNbt();
         if (nbtCompound != null) {
             int year = nbtCompound.getInt("year");
-            tooltip.add(new TranslatableText("item.numismacraft.coin.tooltip", year));
+            String mint = nbtCompound.getString("mint");
+            String design = nbtCompound.getString("design");
+            tooltip.add(new TranslatableText("item.numismacraft.coin.tooltip", design, year));
         }
 
 

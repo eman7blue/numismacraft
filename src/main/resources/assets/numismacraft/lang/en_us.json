@@ -1,9 +1,15 @@
 {
+  "item.numismacraft.coin.tooltip": "%s\n %d %s",
   "item.numismacraft.penny": "Penny",
-  "item.numismacraft.coin.tooltip": "Minted in %d",
   "item.numismacraft.nickel": "Nickel",
   "item.numismacraft.dime": "Dime",
   "item.numismacraft.quarter": "Quarter",
+  "item.numismacraft.half_dollar": "Half Dollar",
+  "item.numismacraft.dollar": "Dollar",
+  "item.numismacraft.quarter_eagle": "Quarter Eagle",
+  "item.numismacraft.half_eagle": "Half Eagle",
+  "item.numismacraft.eagle": "Eagle",
+  "item.numismacraft.double_eagle": "Double Eagle",
   "block.numismacraft.appraisal_table": "Appraisal Table",
   "block.numismacraft.coin_bag": "Coin Bag",
   "itemGroup.numismacraft.general": "Numismacraft"

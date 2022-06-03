@@ -1,0 +1,29 @@
+{
+  "rarity": 1,
+  "coins": [
+    {
+      "coin": "numismacraft:nickel",
+      "year": 1996,
+      "mint": "",
+      "design": "Jefferson"
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "year": 1996,
+      "mint": "D",
+      "design": "Jefferson"
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "year": 1995,
+      "mint": "",
+      "design": "Jefferson"
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "year": 1995,
+      "mint": "D",
+      "design": "Jefferson"
+    }
+  ]
+}

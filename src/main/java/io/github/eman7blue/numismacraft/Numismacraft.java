@@ -3,6 +3,7 @@ package io.github.eman7blue.numismacraft;
 import io.github.eman7blue.numismacraft.block.BlocksRegistry;
 import io.github.eman7blue.numismacraft.items.DefModItemGroup;
 import io.github.eman7blue.numismacraft.items.ItemsRegistry;
+import io.github.eman7blue.numismacraft.loot.CoinTables;
 import io.github.eman7blue.numismacraft.loot.LootTableRegistry;
 import io.github.eman7blue.numismacraft.loot.RandomCoinLoot;
 import net.fabricmc.api.ModInitializer;
@@ -22,12 +23,14 @@ public class Numismacraft implements ModInitializer {
 	public static final ScreenHandlerType<CoinBagScreenHandler> COIN_BAG_SCREEN_HANDLER = ScreenHandlerRegistry.registerSimple(COIN_BAG, CoinBagScreenHandler::new);
 	@Override
 	public void onInitialize() {
+
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		DefModItemGroup.init();
 		ItemsRegistry.init();
 		BlocksRegistry.init();
+		CoinTables coinTables = new CoinTables();
 		LootTableRegistry.init();
 		RandomCoinLoot.init();
 		LOGGER.info("Thank you for playing with Numismacraft (originally called Coin Mod)");
