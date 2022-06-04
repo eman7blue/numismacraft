@@ -17,7 +17,7 @@ public class LootTableRegistry {
             if (LootTables.SIMPLE_DUNGEON_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ItemsRegistry.penny).weight(1)).withFunction(new RandomCoinLootFunction(new LootCondition[0], CoinTables.SECRET));
+                        .with(ItemEntry.builder(ItemsRegistry.penny).weight(20)).withFunction(new RandomCoinLootFunction(new LootCondition[0], CoinTables.RARITY_1));
                 table.pool(poolBuilder);
             }
         });
@@ -25,7 +25,7 @@ public class LootTableRegistry {
             if (LootTables.SIMPLE_DUNGEON_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ItemsRegistry.nickel).weight(1)).withFunction(new RandomCoinLootFunction(new LootCondition[0], CoinTables.SECRET));
+                        .with(ItemEntry.builder(ItemsRegistry.nickel).weight(10)).withFunction(new RandomCoinLootFunction(new LootCondition[0], CoinTables.RARITY_2));
                 table.pool(poolBuilder);
             }
         });
@@ -33,7 +33,7 @@ public class LootTableRegistry {
             if (LootTables.SIMPLE_DUNGEON_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ItemsRegistry.dime).weight(1)).withFunction(new RandomCoinLootFunction(new LootCondition[0], CoinTables.SECRET));
+                        .with(ItemEntry.builder(ItemsRegistry.dime).weight(5)).withFunction(new RandomCoinLootFunction(new LootCondition[0], CoinTables.RARITY_3));
                 table.pool(poolBuilder);
             }
         });
@@ -41,7 +41,7 @@ public class LootTableRegistry {
             if (LootTables.SIMPLE_DUNGEON_CHEST.equals(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ItemsRegistry.quarter).weight(1)).withFunction(new RandomCoinLootFunction(new LootCondition[0], CoinTables.SECRET));
+                        .with(ItemEntry.builder(ItemsRegistry.quarter).weight(5)).withFunction(new RandomCoinLootFunction(new LootCondition[0], CoinTables.RARITY_4));
                 table.pool(poolBuilder);
             }
         });

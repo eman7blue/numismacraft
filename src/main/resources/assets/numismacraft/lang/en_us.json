@@ -1,5 +1,6 @@
 {
-  "item.numismacraft.coin.tooltip": "%s\n %d %s",
+  "item.numismacraft.coin.tooltip_1": "%s",
+  "item.numismacraft.coin.tooltip_2": "%d %s",
   "item.numismacraft.penny": "Penny",
   "item.numismacraft.nickel": "Nickel",
   "item.numismacraft.dime": "Dime",

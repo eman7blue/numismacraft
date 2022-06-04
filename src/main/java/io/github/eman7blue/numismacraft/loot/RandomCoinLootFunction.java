@@ -30,12 +30,13 @@ public class RandomCoinLootFunction extends ConditionalLootFunction {
     protected ItemStack process(ItemStack stack, LootContext context) {
         CoinTable coinTable = CoinTables.getCoinTable(rarity);
         Coin coin = coinTable.getCoin(context);
-        ItemStack ret = new ItemStack(coin.coin, stack.getCount());
-        ret.setNbt(stack.getNbt());
+        ItemStack ret = new ItemStack(Registry.ITEM.get(new Identifier(coin.coin)), stack.getCount());
+        ret.setNbt(stack.getOrCreateNbt());
         NbtCompound nbt = ret.getOrCreateNbt();
         nbt.putInt("year", coin.year);
         nbt.putString("mint", coin.mint);
         nbt.putString("design", coin.design);
+        stack = ret;
         return ret;
     }
 

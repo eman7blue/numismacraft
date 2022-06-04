@@ -23,9 +23,9 @@ public class Coin {
     public int year;
     public String mint;
     public String design;
-    public Item coin;
+    public String coin;
 
-    Coin(int year, String mint, String design, Item coin){
+    Coin(int year, String mint, String design, String coin){
         this.year = year;
         this.mint = mint;
         this.design = design;
@@ -36,7 +36,7 @@ public class Coin {
         private int year;
         private String mint;
         private String design;
-        private Item coin;
+        private String coin;
 
         public Builder() {
         }
@@ -56,7 +56,7 @@ public class Coin {
             return this;
         }
 
-        public Coin.Builder coin(Item coin) {
+        public Coin.Builder coin(String coin) {
             this.coin = coin;
             return this;
         }
@@ -80,7 +80,7 @@ public class Coin {
             int year = JsonHelper.getInt(jsonObject, "year", 0);
             String mint = JsonHelper.getString(jsonObject, "mint", "");
             String design = JsonHelper.getString(jsonObject, "design", "Coin");
-            Item coin = Registry.ITEM.get(new Identifier(JsonHelper.getString(jsonObject, "coin", "numismacraft:dime")));
+            String coin = JsonHelper.getString(jsonObject, "string", "numismacraft:dime");
             return new Coin(year, mint, design, coin);
         }
 
@@ -89,12 +89,12 @@ public class Coin {
             jsonObject.add("year", context.serialize(coin.year));
             jsonObject.add("mint", context.serialize(coin.mint));
             jsonObject.add("design", context.serialize(coin.design));
-            jsonObject.add("coin", context.serialize(coin.coin.toString()));
+            jsonObject.add("coin", context.serialize(coin.coin));
             return jsonObject;
         }
     }
 
     public String toString(){
-        return year + "," + mint + "," + design + "," + coin.toString();
+        return year + "," + mint + "," + design + "," + coin;
     }
 }

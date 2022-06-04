@@ -1,0 +1,334 @@
+{
+  "coins": [
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1907,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1908,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1908,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1908,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1908,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1908,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1909,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1909,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1909,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1910,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1910,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1910,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1911,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1911,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1911,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1912,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1913,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1913,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1913,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1914,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1914,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1914,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1915,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1915,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1916,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1920,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1920,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1921,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1922,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1922,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1923,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1923,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1924,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1924,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1924,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1925,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1925,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1925,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1926,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1926,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1926,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1927,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1927,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1927,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1928,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1929,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1930,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1931,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1931,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:double_eagle",
+      "design": "Saint-Gaudens",
+      "year": 1932,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:quarter_eagle",
+      "design": "Indian Head",
+      "year": 1911,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:half_eagle",
+      "design": "Indian Head",
+      "year": 1909,
+      "mint": "O"
+    },
+    {
+      "coin": "numismacraft:half_eagle",
+      "design": "Indian Head",
+      "year": 1929,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:eagle",
+      "design": "Indian Head",
+      "year": 1920,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:eagle",
+      "design": "Indian Head",
+      "year": 1930,
+      "mint": "S"
+    }
+  ]
+}

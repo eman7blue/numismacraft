@@ -1,9 +1,7 @@
 package io.github.eman7blue.numismacraft.loot;
 
 import com.google.common.collect.Sets;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonElement;
+import com.google.gson.*;
 import io.github.eman7blue.numismacraft.Numismacraft;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.SimpleSynchronousResourceReloadListener;
@@ -13,6 +11,7 @@ import net.minecraft.resource.ResourceManager;
 import net.minecraft.resource.ResourceType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import org.checkerframework.checker.units.qual.C;
 
 import java.io.InputStream;
 import java.lang.reflect.Type;
@@ -24,19 +23,19 @@ import static net.minecraft.util.Util.error;
 public class CoinTables {
     protected static Gson GSON = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create();
     private static final Set<Identifier> COIN_TABLES = Sets.newHashSet();
-    private static final Set<Identifier> COIN_TABLES_READ_ONLY;
-    public static final Identifier EMPTY;
-    public static final Identifier RARITY_1;
-    public static final Identifier RARITY_2;
-    public static final Identifier RARITY_3;
-    public static final Identifier RARITY_4;
-    public static final Identifier RARITY_5;
-    public static final Identifier RARITY_6;
-    public static final Identifier RARITY_7;
-    public static final Identifier RARITY_8;
-    public static final Identifier RARITY_9;
-    public static final Identifier RARITY_10;
-    public static final Identifier SECRET;
+    private static final Set<Identifier> COIN_TABLES_READ_ONLY = Collections.unmodifiableSet(COIN_TABLES);
+    public static final Identifier EMPTY = new Identifier("empty");
+    public static final Identifier RARITY_1 = register("coin_tables/rarity1.json");
+    public static final Identifier RARITY_2 = register("coin_tables/rarity2.json");
+    public static final Identifier RARITY_3 = register("coin_tables/rarity3.json");
+    public static final Identifier RARITY_4 = register("coin_tables/rarity4.json");
+    public static final Identifier RARITY_5 = register("coin_tables/rarity5.json");
+    public static final Identifier RARITY_6 = register("coin_tables/rarity6.json");
+    public static final Identifier RARITY_7 = register("coin_tables/rarity7.json");
+    public static final Identifier RARITY_8 = register("coin_tables/rarity8.json");
+    public static final Identifier RARITY_9 = register("coin_tables/rarity9.json");
+    public static final Identifier RARITY_10 = register("coin_tables/rarity10.json");
+    public static final Identifier SECRET = register("coin_tables/secret.json");
     protected static Map<Identifier, CoinTable> COIN_TABLE_LIST = new HashMap<>();
 
 
@@ -45,7 +44,7 @@ public class CoinTables {
     }
 
     private static Identifier register(String id) {
-        return registerLootTable(new Identifier(id));
+        return registerLootTable(new Identifier("numismacraft", id));
     }
 
     private static Identifier registerLootTable(Identifier id) {
@@ -57,23 +56,28 @@ public class CoinTables {
     }
 
     private static void coinTablesInit(){
-        ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(new SimpleSynchronousResourceReloadListener() {
-            @Override
+        ResourceManagerHelper.get(ResourceType.CLIENT_RESOURCES).registerReloadListener(new SimpleSynchronousResourceReloadListener() {
             public void reload(ResourceManager manager){
-
-                for(Identifier id : manager.findResources("resources/data/numismacraft/coin_tables", path -> path.endsWith(".json"))) {
+                Collection<Identifier> resources = manager.findResources("coin_tables", path -> path.endsWith(".json"));
+                Numismacraft.LOGGER.info(manager.getAllNamespaces().toString());
+                for(Identifier id : resources) {
                     Numismacraft.LOGGER.info(id.toString());
                     try(InputStream stream = manager.getResource(id).getInputStream()) {
                         String text = new String(stream.readAllBytes(), StandardCharsets.UTF_8);
-                        CoinTable coinTable = GSON.fromJson(text, (Type) new CoinTable.Serializer());
+                        CoinTable coinTable = GSON.fromJson(text, CoinTable.class);
                         if(COIN_TABLES.contains(id)){
                             COIN_TABLE_LIST.put(id, coinTable);
                         } else {
                            throw new IllegalArgumentException("" + id + " is not in built-in coin table");
                         }
                     } catch(Exception e) {
-                        error("Error occurred while loading resource json " + id.toString(), e);
+                        error("Error occurred while loading resource json " + id, e);
                     }
+                }
+                if(COIN_TABLE_LIST.isEmpty()){
+                    Numismacraft.LOGGER.error("we've been bamboozled! (coin tables not loaded, mod wont work!)");
+                } else {
+                    Numismacraft.LOGGER.info(COIN_TABLE_LIST.toString());
                 }
             }
 
@@ -88,14 +92,10 @@ public class CoinTables {
     public static CoinTable getCoinTable(Identifier id){
         if(COIN_TABLES.contains(id)){
             CoinTable ret = COIN_TABLE_LIST.get(id);
-            if (ret == null){
-
-            }
-            Numismacraft.LOGGER.info(COIN_TABLE_LIST.toString());
             if (ret != null){
                 return ret;
             } else {
-                throw new IllegalArgumentException("uh oh");
+                throw new IllegalArgumentException("somehow the coin tables are missing?");
             }
         } else {
             throw new IllegalArgumentException("" + id + " is not in built-in coin table");
@@ -108,20 +108,6 @@ public class CoinTables {
     }
 
     static {
-        COIN_TABLES_READ_ONLY = Collections.unmodifiableSet(COIN_TABLES);
-        EMPTY = new Identifier("empty");
-        RARITY_1 = register("rarity1");
-        RARITY_2 = register("rarity2");
-        RARITY_3 = register("rarity3");
-        RARITY_4 = register("rarity4");
-        RARITY_5 = register("rarity5");
-        RARITY_6 = register("rarity6");
-        RARITY_7 = register("rarity7");
-        RARITY_8 = register("rarity8");
-        RARITY_9 = register("rarity9");
-        RARITY_10 = register("rarity10");
-        SECRET = register("secret");
         coinTablesInit();
-
     }
 }

@@ -22,7 +22,20 @@ public class ItemCoin extends Item {
             int year = nbtCompound.getInt("year");
             String mint = nbtCompound.getString("mint");
             String design = nbtCompound.getString("design");
-            tooltip.add(new TranslatableText("item.numismacraft.coin.tooltip", design, year));
+            if (design.length() <= 24) {
+                tooltip.add(new TranslatableText("item.numismacraft.coin.tooltip_1", design));
+            } else {
+                int TOOLTIP_DESIGN_LENGTH = 24;
+                while (design.length() > TOOLTIP_DESIGN_LENGTH) {
+                    String sub = design.substring(0, TOOLTIP_DESIGN_LENGTH);
+                    String rem = design.substring(TOOLTIP_DESIGN_LENGTH);
+                    rem = sub.substring(sub.lastIndexOf(" ")) + rem;
+                    sub = sub.substring(0, sub.lastIndexOf(" "));
+                    tooltip.add(new TranslatableText("item.numismacraft.coin.tooltip_1", rem));
+                    design = sub;
+                }
+            }
+            tooltip.add(new TranslatableText("item.numismacraft.coin.tooltip_2", year, mint));
         }
 
 

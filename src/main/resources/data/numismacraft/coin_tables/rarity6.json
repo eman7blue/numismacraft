@@ -1,0 +1,802 @@
+{
+  "coins": [
+    {
+      "coin": "numismacraft:penny",
+      "design": "Flying Eagle",
+      "year": 1857,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:penny",
+      "design": "Flying Eagle",
+      "year": 1858,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "design": "Shield",
+      "year": 1866,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "design": "Shield",
+      "year": 1867,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "design": "Shield",
+      "year": 1867,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "design": "Shield",
+      "year": 1868,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "design": "Shield",
+      "year": 1869,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "design": "Shield",
+      "year": 1870,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "design": "Shield",
+      "year": 1871,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "design": "Shield",
+      "year": 1872,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "design": "Shield",
+      "year": 1873,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "design": "Shield",
+      "year": 1873,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "design": "Shield",
+      "year": 1874,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "design": "Shield",
+      "year": 1875,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "design": "Shield",
+      "year": 1876,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "design": "Shield",
+      "year": 1882,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "design": "Shield",
+      "year": 1883,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1916,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1916,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1917,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1917,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1917,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1918,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1918,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1918,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1919,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1919,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1919,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1920,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1920,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1920,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1921,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1921,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1923,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1923,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1924,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1924,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1924,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1925,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1925,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1925,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1926,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1926,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1926,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1927,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1927,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1927,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1928,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1928,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1928,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1929,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1929,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1929,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1930,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1930,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1931,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1931,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1931,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1934,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1934,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1935,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1935,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1935,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1936,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1936,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1936,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1937,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1937,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1937,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1938,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1938,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1938,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1939,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1939,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1939,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1940,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1940,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1940,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1941,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1941,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1941,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1942,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1942,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1942,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1943,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1943,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1943,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1944,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1944,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1944,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1945,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1945,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Mercury",
+      "year": 1945,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1917,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1917,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1917,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1917,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1917,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1917,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1918,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1918,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1918,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1919,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1919,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1919,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1920,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1920,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1920,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1921,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1923,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1923,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1924,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1924,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1924,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1925,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1926,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1926,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1926,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1927,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1927,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1927,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1928,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1928,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1928,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1929,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1929,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1929,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1930,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Standing Liberty",
+      "year": 1930,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:penny",
+      "design": "Liberty with Headdress",
+      "year": 1877,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:penny",
+      "design": "Lincoln Wheat Ears VDB",
+      "year": 1909,
+      "mint": "S"
+    },
+    {
+      "coin": "numismacraft:penny",
+      "design": "Lincoln Wheat Ears",
+      "year": 1914,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "design": "Buffalo",
+      "year": 1926,
+      "mint": "S"
+    }
+  ]
+}

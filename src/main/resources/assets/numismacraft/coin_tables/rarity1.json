@@ -1,0 +1,29 @@
+{
+  "rarity": 1,
+  "coins": [
+    {
+      "coin": "numismacraft:penny",
+      "year": 2021,
+      "mint": "",
+      "design": "Lincoln Shield"
+    },
+    {
+      "coin": "numismacraft:penny",
+      "year": 2021,
+      "mint": "D",
+      "design": "Lincoln Shield"
+    },
+    {
+      "coin": "numismacraft:penny",
+      "year": 2020,
+      "mint": "",
+      "design": "Lincoln Shield"
+    },
+    {
+      "coin": "numismacraft:penny",
+      "year": 2020,
+      "mint": "D",
+      "design": "Lincoln Shield"
+    }
+  ]
+}
