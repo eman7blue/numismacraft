@@ -28,7 +28,6 @@
 
   },
   "mixins": [
-    "numismacraft.mixins.json"
   ],
 
   "depends": {
