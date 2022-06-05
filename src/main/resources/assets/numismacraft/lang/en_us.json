@@ -1,6 +1,11 @@
 {
-  "item.numismacraft.coin.tooltip_1": "%s",
+  "item.numismacraft.coin.tooltip_1_1": "%s",
+  "item.numismacraft.coin.tooltip_1_2": "%s",
+  "item.numismacraft.coin.tooltip_1_3": "%s",
+  "item.numismacraft.coin.tooltip_1_4": "%s",
+  "item.numismacraft.coin.tooltip_1_5": "%s",
   "item.numismacraft.coin.tooltip_2": "%d %s",
+  "item.numismacraft.coin_purse": "Coin Purse",
   "item.numismacraft.penny": "Penny",
   "item.numismacraft.nickel": "Nickel",
   "item.numismacraft.dime": "Dime",

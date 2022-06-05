@@ -1,5 +1,6 @@
 package io.github.eman7blue.numismacraft.items;
 
+import io.github.eman7blue.numismacraft.Numismacraft;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -22,17 +23,22 @@ public class ItemCoin extends Item {
             int year = nbtCompound.getInt("year");
             String mint = nbtCompound.getString("mint");
             String design = nbtCompound.getString("design");
-            if (design.length() <= 24) {
-                tooltip.add(new TranslatableText("item.numismacraft.coin.tooltip_1", design));
+            int count = 1;
+            int TOOLTIP_DESIGN_LENGTH = 32;
+            if (design.length() <= TOOLTIP_DESIGN_LENGTH) {
+                tooltip.add(new TranslatableText("item.numismacraft.coin.tooltip_1_1", design));
             } else {
-                int TOOLTIP_DESIGN_LENGTH = 24;
                 while (design.length() > TOOLTIP_DESIGN_LENGTH) {
                     String sub = design.substring(0, TOOLTIP_DESIGN_LENGTH);
                     String rem = design.substring(TOOLTIP_DESIGN_LENGTH);
-                    rem = sub.substring(sub.lastIndexOf(" ")) + rem;
+                    rem = sub.substring(sub.lastIndexOf(" ") + 1) + rem;
                     sub = sub.substring(0, sub.lastIndexOf(" "));
-                    tooltip.add(new TranslatableText("item.numismacraft.coin.tooltip_1", rem));
-                    design = sub;
+                    tooltip.add(new TranslatableText("item.numismacraft.coin.tooltip_1_" + count, sub));
+                    design = rem;
+                    count++;
+                }
+                if(design.length() > 0){
+                    tooltip.add(new TranslatableText("item.numismacraft.coin.tooltip_1_" + count, design));
                 }
             }
             tooltip.add(new TranslatableText("item.numismacraft.coin.tooltip_2", year, mint));

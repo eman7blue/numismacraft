@@ -115,6 +115,8 @@ public interface CoinBagInventory extends Inventory {
         // Override if you want behavior.
     }
 
+
+
     /**
      * @return true if the player can use the inventory, false otherwise.
      */

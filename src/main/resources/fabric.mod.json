@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Numismacraft",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "Numismacraft: The Coin Collecting Mod populates coins throughout the Minecraft world. With over 2000 different coins, there is a ton of collecting to do!",
   "authors": [
     "Eman7blue"
   ],
@@ -13,7 +13,7 @@
     "sources": "https://github.com/eman7blue/numismacraft"
   },
 
-  "license": "CC0-1.0",
+  "license": "LGPL-3.0",
   "icon": "assets/numismacraft/icon.png",
 
   "environment": "*",

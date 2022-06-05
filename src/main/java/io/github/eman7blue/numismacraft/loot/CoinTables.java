@@ -1,27 +1,22 @@
 package io.github.eman7blue.numismacraft.loot;
 
 import com.google.common.collect.Sets;
-import com.google.gson.*;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import io.github.eman7blue.numismacraft.Numismacraft;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.SimpleSynchronousResourceReloadListener;
-import net.fabricmc.fabric.impl.resource.loader.ResourceManagerHelperImpl;
-import net.minecraft.resource.Resource;
 import net.minecraft.resource.ResourceManager;
 import net.minecraft.resource.ResourceType;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
-import org.checkerframework.checker.units.qual.C;
 
 import java.io.InputStream;
-import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 import static net.minecraft.util.Util.error;
 
 public class CoinTables {
-    protected static Gson GSON = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create();
     private static final Set<Identifier> COIN_TABLES = Sets.newHashSet();
     private static final Set<Identifier> COIN_TABLES_READ_ONLY = Collections.unmodifiableSet(COIN_TABLES);
     public static final Identifier EMPTY = new Identifier("empty");
@@ -56,11 +51,13 @@ public class CoinTables {
     }
 
     private static void coinTablesInit(){
-        ResourceManagerHelper.get(ResourceType.CLIENT_RESOURCES).registerReloadListener(new SimpleSynchronousResourceReloadListener() {
+        ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(new SimpleSynchronousResourceReloadListener() {
             public void reload(ResourceManager manager){
+                COIN_TABLE_LIST.clear();
                 Collection<Identifier> resources = manager.findResources("coin_tables", path -> path.endsWith(".json"));
                 Numismacraft.LOGGER.info(manager.getAllNamespaces().toString());
                 for(Identifier id : resources) {
+                    Gson GSON = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create();
                     Numismacraft.LOGGER.info(id.toString());
                     try(InputStream stream = manager.getResource(id).getInputStream()) {
                         String text = new String(stream.readAllBytes(), StandardCharsets.UTF_8);

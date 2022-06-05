@@ -46,7 +46,6 @@ public class CoinBagBlock extends BlockWithEntity {
         return ActionResult.SUCCESS;
     }
 
-
     @SuppressWarnings("deprecation")
     @Override
     public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
@@ -65,6 +64,7 @@ public class CoinBagBlock extends BlockWithEntity {
     public boolean hasComparatorOutput(BlockState state) {
         return true;
     }
+
     @SuppressWarnings("deprecation")
     @Override
     public int getComparatorOutput(BlockState state, World world, BlockPos pos) {

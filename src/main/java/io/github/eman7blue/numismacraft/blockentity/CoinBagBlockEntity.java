@@ -1,9 +1,11 @@
 package io.github.eman7blue.numismacraft.blockentity;
 
-import io.github.eman7blue.numismacraft.CoinBagScreenHandler;
 import io.github.eman7blue.numismacraft.block.BlocksRegistry;
+import io.github.eman7blue.numismacraft.blockentity.inventory.CoinBagGui;
 import io.github.eman7blue.numismacraft.blockentity.inventory.CoinBagInventory;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.ShulkerBoxBlock;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -12,13 +14,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandler;
+import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 
 public class CoinBagBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, CoinBagInventory {
-    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(108, ItemStack.EMPTY);
+    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(135, ItemStack.EMPTY);
 
     public CoinBagBlockEntity(BlockPos pos, BlockState state) {
         super(BlocksRegistry.COIN_BAG_BLOCK_ENTITY, pos, state);
@@ -31,8 +34,8 @@ public class CoinBagBlockEntity extends BlockEntity implements NamedScreenHandle
 
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-        return new CoinBagScreenHandler(syncId, playerInventory, this);
-    }
+        return new CoinBagGui(syncId, playerInventory, ScreenHandlerContext.create(world, pos));
+    };
 
     @Override
     public Text getDisplayName() {
@@ -50,4 +53,6 @@ public class CoinBagBlockEntity extends BlockEntity implements NamedScreenHandle
         super.writeNbt(nbt);
         Inventories.writeNbt(nbt, this.inventory);
     }
+
+
 }

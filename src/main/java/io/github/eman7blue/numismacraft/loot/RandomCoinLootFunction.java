@@ -3,20 +3,17 @@ package io.github.eman7blue.numismacraft.loot;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonSerializationContext;
-import com.google.gson.JsonSyntaxException;
-import io.github.eman7blue.numismacraft.items.ItemsRegistry;
 import net.minecraft.item.ItemStack;
 import net.minecraft.loot.condition.LootCondition;
 import net.minecraft.loot.context.LootContext;
 import net.minecraft.loot.function.ConditionalLootFunction;
+import net.minecraft.loot.function.LootFunction;
 import net.minecraft.loot.function.LootFunctionType;
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.potion.Potion;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.JsonHelper;
 import net.minecraft.util.registry.Registry;
 
-import java.util.Calendar;
 import static io.github.eman7blue.numismacraft.loot.RandomCoinLoot.RANDOM_COIN;
 
 public class RandomCoinLootFunction extends ConditionalLootFunction {
@@ -43,6 +40,31 @@ public class RandomCoinLootFunction extends ConditionalLootFunction {
     @Override
     public LootFunctionType getType() {
         return RANDOM_COIN;
+    }
+
+    public static class Builder extends ConditionalLootFunction.Builder<RandomCoinLootFunction.Builder> {
+        private Identifier rarity;
+
+        public Builder() {
+            this(CoinTables.EMPTY);
+        }
+
+        public Builder(Identifier rarity) {
+            this.rarity = rarity;
+        }
+
+        protected RandomCoinLootFunction.Builder getThisBuilder() {
+            return this;
+        }
+
+        public RandomCoinLootFunction.Builder rarity(Identifier rarity) {
+            this.rarity = rarity;
+            return this;
+        }
+
+        public LootFunction build() {
+            return new RandomCoinLootFunction(this.getConditions(), this.rarity);
+        }
     }
 
     public static class Serializer extends ConditionalLootFunction.Serializer<RandomCoinLootFunction> {

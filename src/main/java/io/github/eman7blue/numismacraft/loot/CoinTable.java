@@ -51,17 +51,17 @@ public class CoinTable {
         }
 
         public CoinTable deserialize(JsonElement element, Type type, JsonDeserializationContext context) throws JsonParseException {
-            JsonObject jsonObject = JsonHelper.asObject(element, "coin table");
-            ArrayList<Coin> coins = (ArrayList<Coin>) JsonHelper.deserialize(jsonObject, "coins", new ArrayList<Coin>(), context, ArrayList.class);
+            JsonObject object = JsonHelper.asObject(element, "coin table");
+            ArrayList<Coin> coins = (ArrayList<Coin>) JsonHelper.deserialize(object, "coins", new ArrayList<Coin>(), context, ArrayList.class);
             return new CoinTable(coins);
         }
 
         public JsonElement serialize(CoinTable coinTable, Type type, JsonSerializationContext context) {
-            JsonObject jsonObject = new JsonObject();
+            JsonObject object = new JsonObject();
             if (coinTable.coins.size() > 0) {
-                jsonObject.add("coins", context.serialize(coinTable.coins));
+                object.add("coins", context.serialize(coinTable.coins));
             }
-            return jsonObject;
+            return object;
         }
     }
 
