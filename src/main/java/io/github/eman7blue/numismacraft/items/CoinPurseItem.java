@@ -13,7 +13,7 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
+import net.minecraft.text.TranslatableTextContent;
 import net.minecraft.util.ClickType;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
@@ -45,9 +45,7 @@ public class CoinPurseItem extends Item{
             if (itemStack.getItem().getClass().equals(ItemsRegistry.PENNY.getClass()) || itemStack.isEmpty()) {
                 if (itemStack.isEmpty()) {
                     this.playRemoveOneSound(player);
-                    removeFirstStack(stack).ifPresent((removedStack) -> {
-                        addToPurse(stack, slot.insertStack(removedStack));
-                    });
+                    removeFirstStack(stack).ifPresent((removedStack) -> addToPurse(stack, slot.insertStack(removedStack)));
                 } else if (itemStack.getItem().canBeNested()) {
                     int i = (64 - getPurseOccupancy(stack)) / getItemOccupancy(itemStack);
                     int j = addToPurse(stack, slot.takeStackRange(itemStack.getCount(), i, player));
@@ -145,11 +143,11 @@ public class CoinPurseItem extends Item{
         if (stack.isOf(ItemsRegistry.COIN_PURSE)) {
             return Optional.empty();
         } else {
-            Stream var10000 = items.stream();
+            Stream var = items.stream();
             Objects.requireNonNull(NbtCompound.class);
-            var10000 = var10000.filter(NbtCompound.class::isInstance);
+            var = var.filter(NbtCompound.class::isInstance);
             Objects.requireNonNull(NbtCompound.class);
-            return var10000.map(NbtCompound.class::cast).filter((item) -> {
+            return var.map(NbtCompound.class::cast).filter((item) -> {
                 return ItemStack.canCombine(ItemStack.fromNbt((NbtCompound) item), stack);
             }).findFirst();
         }
@@ -171,9 +169,7 @@ public class CoinPurseItem extends Item{
     }
 
     private static int getPurseOccupancy(ItemStack stack) {
-        return getPursedStacks(stack).mapToInt((itemStack) -> {
-            return getItemOccupancy(itemStack) * itemStack.getCount();
-        }).sum();
+        return getPursedStacks(stack).mapToInt((itemStack) -> getItemOccupancy(itemStack) * itemStack.getCount()).sum();
     }
 
     private static Optional<ItemStack> removeFirstStack(ItemStack stack) {
@@ -231,7 +227,7 @@ public class CoinPurseItem extends Item{
     }
 
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add((new TranslatableText("item.minecraft.bundle.fullness", new Object[]{getPurseOccupancy(stack), 64})).formatted(Formatting.GRAY));
+        tooltip.add((Text.translatable("item.minecraft.bundle.fullness", new Object[]{getPurseOccupancy(stack), 64})).formatted(Formatting.GRAY));
     }
 
     public void onItemEntityDestroyed(ItemEntity entity) {

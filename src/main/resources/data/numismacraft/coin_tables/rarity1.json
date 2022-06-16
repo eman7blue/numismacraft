@@ -775,6 +775,18 @@
       "mint": "D"
     },
     {
+      "coin": "numismacraft:penny",
+      "design": "Lincoln Shield",
+      "year": 2022,
+      "mint": ""
+    },
+    {
+      "coin": "numismacraft:penny",
+      "design": "Lincoln Shield",
+      "year": 2022,
+      "mint": "D"
+    },
+    {
       "coin": "numismacraft:nickel",
       "design": "Jefferson Liberty",
       "year": 2006,
@@ -964,6 +976,18 @@
       "coin": "numismacraft:nickel",
       "design": "Jefferson Liberty",
       "year": 2021,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "design": "Jefferson Liberty",
+      "year": 2022,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:nickel",
+      "design": "Jefferson Liberty",
+      "year": 2022,
       "mint": "P"
     },
     {
@@ -1630,6 +1654,18 @@
       "coin": "numismacraft:dime",
       "design": "Roosevelt",
       "year": 2021,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Roosevelt",
+      "year": 2022,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:dime",
+      "design": "Roosevelt",
+      "year": 2022,
       "mint": "P"
     }
   ]

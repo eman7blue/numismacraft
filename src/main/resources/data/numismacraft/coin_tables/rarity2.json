@@ -2621,6 +2621,66 @@
       "design": "Washington Crossing the Delaware",
       "year": 2021,
       "mint": "P"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Maya Angelou",
+      "year": 2022,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Maya Angelou",
+      "year": 2022,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Dr. Sally Ride",
+      "year": 2022,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Dr. Sally Ride",
+      "year": 2022,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Wilma Mankiller",
+      "year": 2022,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Wilma Mankiller",
+      "year": 2022,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Nina Otero-Warren",
+      "year": 2022,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Nina Otero-Warren",
+      "year": 2022,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Anna May Wong",
+      "year": 2022,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:quarter",
+      "design": "Anna May Wong",
+      "year": 2022,
+      "mint": "P"
     }
   ]
 }

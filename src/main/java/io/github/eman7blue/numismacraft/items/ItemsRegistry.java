@@ -10,13 +10,14 @@ import java.util.ArrayList;
 import static io.github.eman7blue.numismacraft.items.DefModItemGroup.NUMISMACRAFT_ITEMS;
 
 public final class ItemsRegistry {
-    public static final Item COIN_PURSE = new CoinPurseItem(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final Item COIN_PURSE = new CoinPurseItem(new FabricItemSettings().group(NUMISMACRAFT_ITEMS).maxCount(1));
     public static final ItemCoin PENNY = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
     public static final ItemCoin NICKEL = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
     public static final ItemCoin DIME = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
     public static final ItemCoin QUARTER = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
     public static final ItemCoin HALF_DOLLAR = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
     public static final ItemCoin DOLLAR = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin SMALL_DOLLAR = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
     public static final ItemCoin QUARTER_EAGLE = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
     public static final ItemCoin HALF_EAGLE = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
     public static final ItemCoin EAGLE = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
@@ -37,6 +38,7 @@ public final class ItemsRegistry {
         registerCoinItem(new Identifier("numismacraft", "quarter"), QUARTER);
         registerCoinItem(new Identifier("numismacraft", "half_dollar"), HALF_DOLLAR);
         registerCoinItem(new Identifier("numismacraft", "dollar"), DOLLAR);
+        registerCoinItem(new Identifier("numismacraft", "small_dollar"), SMALL_DOLLAR);
         registerCoinItem(new Identifier("numismacraft", "quarter_eagle"), QUARTER_EAGLE);
         registerCoinItem(new Identifier("numismacraft", "half_eagle"), HALF_EAGLE);
         registerCoinItem(new Identifier("numismacraft", "eagle"), EAGLE);

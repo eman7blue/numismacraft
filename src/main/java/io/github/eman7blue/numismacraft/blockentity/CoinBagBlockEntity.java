@@ -14,7 +14,7 @@ import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
+import net.minecraft.text.TranslatableTextContent;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 
@@ -33,11 +33,11 @@ public class CoinBagBlockEntity extends BlockEntity implements NamedScreenHandle
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
         return new CoinBagGui(syncId, playerInventory, ScreenHandlerContext.create(world, pos));
-    };
+    }
 
     @Override
     public Text getDisplayName() {
-        return new TranslatableText(getCachedState().getBlock().getTranslationKey());
+        return Text.of(getCachedState().getBlock().getTranslationKey());
     }
 
     @Override

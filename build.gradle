@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.11-SNAPSHOT'
+	id 'fabric-loom' version '0.12-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -27,8 +27,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// CottonMC LibGui to make the inventories so much easier
-	modImplementation include("io.github.cottonmc:LibGui:5.4.2+1.18.2")
-	include "io.github.cottonmc:LibGui:5.4.2+1.18.2"
+	modImplementation include("io.github.cottonmc:LibGui:6.0.0-beta.5+1.19-pre1")
 }
 
 processResources {
@@ -71,9 +70,5 @@ publishing {
 		// Notice: This block does NOT have the same function as the block in the top level.
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
-		maven {
-			name = "CottonMC"
-			url = "https://server.bbkr.space/artifactory/libs-release"
-		}
 	}
 }

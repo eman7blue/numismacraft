@@ -6,6 +6,7 @@ import com.google.gson.GsonBuilder;
 import io.github.eman7blue.numismacraft.Numismacraft;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.SimpleSynchronousResourceReloadListener;
+import net.minecraft.resource.Resource;
 import net.minecraft.resource.ResourceManager;
 import net.minecraft.resource.ResourceType;
 import net.minecraft.util.Identifier;
@@ -54,12 +55,12 @@ public class CoinTables {
         ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(new SimpleSynchronousResourceReloadListener() {
             public void reload(ResourceManager manager){
                 COIN_TABLE_LIST.clear();
-                Collection<Identifier> resources = manager.findResources("coin_tables", path -> path.endsWith(".json"));
+                Map<Identifier, Resource> resources = manager.findResources("coin_tables", path -> path.getPath().endsWith(".json"));
                 Numismacraft.LOGGER.info(manager.getAllNamespaces().toString());
-                for(Identifier id : resources) {
+                for(Identifier id : resources.keySet()) {
                     Gson GSON = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create();
                     Numismacraft.LOGGER.info(id.toString());
-                    try(InputStream stream = manager.getResource(id).getInputStream()) {
+                    try(InputStream stream = manager.getResource(id).get().getInputStream()) {
                         String text = new String(stream.readAllBytes(), StandardCharsets.UTF_8);
                         CoinTable coinTable = GSON.fromJson(text, CoinTable.class);
                         if(COIN_TABLES.contains(id)){

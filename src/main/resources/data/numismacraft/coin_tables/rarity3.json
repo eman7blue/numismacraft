@@ -1447,399 +1447,543 @@
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:half_dollar",
+      "design": "Kennedy",
+      "year": 2022,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:half_dollar",
+      "design": "Kennedy",
+      "year": 2022,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
       "design": "Sacagawea",
       "year": 2000,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Sacagawea",
       "year": 2000,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Sacagawea",
       "year": 2001,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Sacagawea",
       "year": 2001,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Sacagawea",
       "year": 2002,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Sacagawea",
       "year": 2002,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Sacagawea",
       "year": 2003,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Sacagawea",
       "year": 2003,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Sacagawea",
       "year": 2004,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Sacagawea",
       "year": 2004,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Sacagawea",
       "year": 2005,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Sacagawea",
       "year": 2005,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Sacagawea",
       "year": 2006,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Sacagawea",
       "year": 2006,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Sacagawea",
       "year": 2007,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Sacagawea",
       "year": 2007,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Sacagawea",
       "year": 2008,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Sacagawea",
       "year": 2008,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "George Washington",
       "year": 2007,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "George Washington",
       "year": 2007,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "John Adams",
       "year": 2007,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "John Adams",
       "year": 2007,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Thomas Jefferson",
       "year": 2007,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Thomas Jefferson",
       "year": 2007,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "James Madison",
       "year": 2007,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "James Madison",
       "year": 2007,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "James Monroe",
       "year": 2008,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "James Monroe",
       "year": 2008,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "John Quincy Adams",
       "year": 2008,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "John Quincy Adams",
       "year": 2008,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Andrew Jackson",
       "year": 2008,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Andrew Jackson",
       "year": 2008,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Martin Van Buren",
       "year": 2008,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Martin Van Buren",
       "year": 2008,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "William Henry Harrison",
       "year": 2009,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "William Henry Harrison",
       "year": 2009,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "John Tyler",
       "year": 2009,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "John Tyler",
       "year": 2009,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "James K. Polk",
       "year": 2009,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "James K. Polk",
       "year": 2009,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Zachary Taylor",
       "year": 2009,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Zachary Taylor",
       "year": 2009,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
-      "design": "Spread of Three Sisters Agriculture",
-      "year": 2009,
-      "mint": "D"
-    },
-    {
-      "coin": "numismacraft:dollar",
-      "design": "Spread of Three Sisters Agriculture",
-      "year": 2009,
-      "mint": "P"
-    },
-    {
-      "coin": "numismacraft:dollar",
-      "design": "Haudenosaunee",
-      "year": 2010,
-      "mint": "D"
-    },
-    {
-      "coin": "numismacraft:dollar",
-      "design": "Haudenosaunee",
-      "year": 2010,
-      "mint": "P"
-    },
-    {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Millard Fillmore",
       "year": 2010,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Millard Fillmore",
       "year": 2010,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Franklin Pierce",
       "year": 2010,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Franklin Pierce",
       "year": 2010,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "James Buchanan",
       "year": 2010,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "James Buchanan",
       "year": 2010,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Abraham Lincoln",
       "year": 2010,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Abraham Lincoln",
       "year": 2010,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Andrew Johnson",
       "year": 2011,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Andrew Johnson",
       "year": 2011,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Ulysses S. Grant",
       "year": 2011,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Ulysses S. Grant",
       "year": 2011,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Rutherford B. Hayes",
       "year": 2011,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Rutherford B. Hayes",
       "year": 2011,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "James Garfield",
       "year": 2011,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "James Garfield",
       "year": 2011,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
+      "design": "Benjamin Harrison",
+      "year": 2012,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Benjamin Harrison",
+      "year": 2012,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Spread of Three Sisters Agriculture",
+      "year": 2009,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Spread of Three Sisters Agriculture",
+      "year": 2009,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Great Tree of Peace",
+      "year": 2010,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Great Tree of Peace",
+      "year": 2010,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
       "design": "Wampanoag Treaty",
       "year": 2011,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
+      "coin": "numismacraft:small_dollar",
       "design": "Wampanoag Treaty",
       "year": 2011,
       "mint": "P"
     },
     {
-      "coin": "numismacraft:dollar",
-      "design": "Benjamin Harrison",
+      "coin": "numismacraft:small_dollar",
+      "design": "Trade Routes in 17th Century",
       "year": 2012,
       "mint": "D"
     },
     {
-      "coin": "numismacraft:dollar",
-      "design": "Benjamin Harrison",
+      "coin": "numismacraft:small_dollar",
+      "design": "Trade Routes in 17th Century",
       "year": 2012,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Delaware Treaty of 1778",
+      "year": 2013,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Delaware Treaty of 1778",
+      "year": 2013,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Native American Hospitality to Lewis & Clark",
+      "year": 2014,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Native American Hospitality to Lewis & Clark",
+      "year": 2014,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Mohawk Ironworkers",
+      "year": 2015,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Mohawk Ironworkers",
+      "year": 2015,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Code Talkers",
+      "year": 2016,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Code Talkers",
+      "year": 2016,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Sequoyah",
+      "year": 2017,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Sequoyah",
+      "year": 2017,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Jim Thorpe",
+      "year": 2018,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Jim Thorpe",
+      "year": 2018,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "American Indians in Space",
+      "year": 2019,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "American Indians in Space",
+      "year": 2019,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Elizabeth Peratrovich",
+      "year": 2020,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Elizabeth Peratrovich",
+      "year": 2020,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Native Americans in the U.S. Military",
+      "year": 2021,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Native Americans in the U.S. Military",
+      "year": 2021,
+      "mint": "P"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Ely Parker",
+      "year": 2022,
+      "mint": "D"
+    },
+    {
+      "coin": "numismacraft:small_dollar",
+      "design": "Ely Parker",
+      "year": 2022,
       "mint": "P"
     }
   ]
