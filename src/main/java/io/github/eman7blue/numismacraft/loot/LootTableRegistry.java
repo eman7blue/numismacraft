@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class LootTableRegistry {
     private static void modifyLootTable(LootPool.Builder poolBuilder, LootTable.Builder table,  Identifier id, int weight){
-        poolBuilder.with(ItemEntry.builder(ItemsRegistry.DIME).weight(weight).apply(new RandomCoinLootFunction.Builder(id)));
+        poolBuilder.with(ItemEntry.builder(ItemsRegistry.LINCOLN_PENNY).weight(weight).apply(new RandomCoinLootFunction.Builder(id)));
     }
     public static void init(){
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, table, setter) -> {

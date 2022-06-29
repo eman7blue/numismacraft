@@ -11,17 +11,37 @@ import static io.github.eman7blue.numismacraft.items.DefModItemGroup.NUMISMACRAF
 
 public final class ItemsRegistry {
     public static final Item COIN_PURSE = new CoinPurseItem(new FabricItemSettings().group(NUMISMACRAFT_ITEMS).maxCount(1));
-    public static final ItemCoin PENNY = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
-    public static final ItemCoin NICKEL = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
-    public static final ItemCoin DIME = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
-    public static final ItemCoin QUARTER = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
-    public static final ItemCoin HALF_DOLLAR = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
-    public static final ItemCoin DOLLAR = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
-    public static final ItemCoin SMALL_DOLLAR = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
-    public static final ItemCoin QUARTER_EAGLE = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
-    public static final ItemCoin HALF_EAGLE = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
-    public static final ItemCoin EAGLE = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
-    public static final ItemCoin DOUBLE_EAGLE = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin FLYING_EAGLE_CENT_PENNY = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin LIBERTY_HEADDRESS_PENNY = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin LINCOLN_PENNY = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin LINCOLN_STEEL_PENNY = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin SHIELD_NICKEL = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin LIBERTY_NICKEL = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin JEFFERSON_OLD_NICKEL = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin JEFFERSON_WESTWARD_NICKEL = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin JEFFERSON_NICKEL = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin BARBER_DIME = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin MERCURY_DIME = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin ROOSEVELT_DIME = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin BARBER_QUARTER = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin STANDING_LIBERTY_QUARTER = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin WASHINGTON_OLD_QUARTER = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin WASHINGTON_STATE_QUARTER = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin WASHINGTON_QUARTER = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin BARBER_HALF_DOLLAR = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin WALKING_LIBERTY_HALF_DOLLAR = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin FRANKLIN_HALF_DOLLAR = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin KENNEDY_HALF_DOLLAR = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin MORGAN_DOLLAR = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin PEACE_DOLLAR = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin EISENHOWER_DOLLAR = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin SUSAN_DOLLAR = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin SACAGAWEA_DOLLAR = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin PRESIDENTIAL_DOLLAR = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin INDIAN_HEAD_QUARTER_EAGLE = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin INDIAN_HEAD_HALF_EAGLE = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin INDIAN_HEAD_EAGLE = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
+    public static final ItemCoin SAINT_GAUDENS_DOUBLE_EAGLE = new ItemCoin(new FabricItemSettings().group(NUMISMACRAFT_ITEMS));
 
     public static final ArrayList<Item> COINS = new ArrayList<>();
 
@@ -32,17 +52,37 @@ public final class ItemsRegistry {
     }
     public static void init(){
         registerCoinItem(new Identifier("numismacraft", "coin_purse"), COIN_PURSE);
-        registerCoinItem(new Identifier("numismacraft", "penny"), PENNY);
-        registerCoinItem(new Identifier("numismacraft", "nickel"), NICKEL);
-        registerCoinItem(new Identifier("numismacraft", "dime"), DIME);
-        registerCoinItem(new Identifier("numismacraft", "quarter"), QUARTER);
-        registerCoinItem(new Identifier("numismacraft", "half_dollar"), HALF_DOLLAR);
-        registerCoinItem(new Identifier("numismacraft", "dollar"), DOLLAR);
-        registerCoinItem(new Identifier("numismacraft", "small_dollar"), SMALL_DOLLAR);
-        registerCoinItem(new Identifier("numismacraft", "quarter_eagle"), QUARTER_EAGLE);
-        registerCoinItem(new Identifier("numismacraft", "half_eagle"), HALF_EAGLE);
-        registerCoinItem(new Identifier("numismacraft", "eagle"), EAGLE);
-        registerCoinItem(new Identifier("numismacraft", "double_eagle"), DOUBLE_EAGLE);
+        registerCoinItem(new Identifier("numismacraft", "flying_eagle_cent_penny"), FLYING_EAGLE_CENT_PENNY);
+        registerCoinItem(new Identifier("numismacraft", "liberty_headdress_penny"), LIBERTY_HEADDRESS_PENNY);
+        registerCoinItem(new Identifier("numismacraft", "lincoln_penny"), LINCOLN_PENNY);
+        registerCoinItem(new Identifier("numismacraft", "lincoln_steel_penny"), LINCOLN_STEEL_PENNY);
+        registerCoinItem(new Identifier("numismacraft", "shield_nickel"), SHIELD_NICKEL);
+        registerCoinItem(new Identifier("numismacraft", "liberty_nickel"), LIBERTY_NICKEL);
+        registerCoinItem(new Identifier("numismacraft", "jefferson_old_nickel"), JEFFERSON_OLD_NICKEL);
+        registerCoinItem(new Identifier("numismacraft", "jefferson_westward_nickel"), JEFFERSON_WESTWARD_NICKEL);
+        registerCoinItem(new Identifier("numismacraft", "jefferson_nickel"), JEFFERSON_NICKEL);
+        registerCoinItem(new Identifier("numismacraft", "barber_dime"), BARBER_DIME);
+        registerCoinItem(new Identifier("numismacraft", "mercury_dime"), MERCURY_DIME);
+        registerCoinItem(new Identifier("numismacraft", "roosevelt_dime"), ROOSEVELT_DIME);
+        registerCoinItem(new Identifier("numismacraft", "barber_quarter"), BARBER_QUARTER);
+        registerCoinItem(new Identifier("numismacraft", "standing_liberty_quarter"), STANDING_LIBERTY_QUARTER);
+        registerCoinItem(new Identifier("numismacraft", "washington_old_quarter"), WASHINGTON_OLD_QUARTER);
+        registerCoinItem(new Identifier("numismacraft", "washington_state_quarter"), WASHINGTON_STATE_QUARTER);
+        registerCoinItem(new Identifier("numismacraft", "washington_quarter"), WASHINGTON_QUARTER);
+        registerCoinItem(new Identifier("numismacraft", "barber_half_dollar"), BARBER_HALF_DOLLAR);
+        registerCoinItem(new Identifier("numismacraft", "walking_liberty_half_dollar"), WALKING_LIBERTY_HALF_DOLLAR);
+        registerCoinItem(new Identifier("numismacraft", "franklin_half_dollar"), FRANKLIN_HALF_DOLLAR);
+        registerCoinItem(new Identifier("numismacraft", "kennedy_half_dollar"), KENNEDY_HALF_DOLLAR);
+        registerCoinItem(new Identifier("numismacraft", "morgan_dollar"), MORGAN_DOLLAR);
+        registerCoinItem(new Identifier("numismacraft", "peace_dollar"), PEACE_DOLLAR);
+        registerCoinItem(new Identifier("numismacraft", "eisenhower_dollar"), EISENHOWER_DOLLAR);
+        registerCoinItem(new Identifier("numismacraft", "susan_dollar"), SUSAN_DOLLAR);
+        registerCoinItem(new Identifier("numismacraft", "sacagawea_dollar"), SACAGAWEA_DOLLAR);
+        registerCoinItem(new Identifier("numismacraft", "presidential_dollar"), PRESIDENTIAL_DOLLAR);
+        registerCoinItem(new Identifier("numismacraft", "indian_head_quarter_eagle"), INDIAN_HEAD_QUARTER_EAGLE);
+        registerCoinItem(new Identifier("numismacraft", "indian_head_half_eagle"), INDIAN_HEAD_HALF_EAGLE);
+        registerCoinItem(new Identifier("numismacraft", "indian_head_eagle"), INDIAN_HEAD_EAGLE);
+        registerCoinItem(new Identifier("numismacraft", "saint_gaudens_double_eagle"), SAINT_GAUDENS_DOUBLE_EAGLE);
     }
 
 

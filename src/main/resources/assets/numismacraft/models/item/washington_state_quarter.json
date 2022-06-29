@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "numismacraft:item/washington_state_quarter"
+  }
+}

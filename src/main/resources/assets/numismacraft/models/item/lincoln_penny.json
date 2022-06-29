@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "numismacraft:item/dollar"
+    "layer0": "numismacraft:item/lincoln_penny"
   }
 }

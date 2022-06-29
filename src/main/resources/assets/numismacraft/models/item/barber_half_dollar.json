@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "numismacraft:item/double_eagle"
+    "layer0": "numismacraft:item/barber_half_dollar"
   }
 }

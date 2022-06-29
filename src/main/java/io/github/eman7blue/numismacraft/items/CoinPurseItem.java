@@ -42,7 +42,7 @@ public class CoinPurseItem extends Item{
             return false;
         } else {
             ItemStack itemStack = slot.getStack();
-            if (itemStack.getItem().getClass().equals(ItemsRegistry.PENNY.getClass()) || itemStack.isEmpty()) {
+            if (itemStack.getItem().getClass().equals(ItemsRegistry.LINCOLN_PENNY.getClass()) || itemStack.isEmpty()) {
                 if (itemStack.isEmpty()) {
                     this.playRemoveOneSound(player);
                     removeFirstStack(stack).ifPresent((removedStack) -> addToPurse(stack, slot.insertStack(removedStack)));
@@ -59,7 +59,7 @@ public class CoinPurseItem extends Item{
     }
 
     public boolean onClicked(ItemStack stack, ItemStack otherStack, Slot slot, ClickType clickType, PlayerEntity player, StackReference cursorStackReference) {
-        if (clickType == ClickType.RIGHT && slot.canTakePartial(player) && otherStack.getItem().getClass().equals(ItemsRegistry.PENNY.getClass())) {
+        if (clickType == ClickType.RIGHT && slot.canTakePartial(player) && otherStack.getItem().getClass().equals(ItemsRegistry.LINCOLN_PENNY.getClass())) {
             if (otherStack.isEmpty()) {
                 removeFirstStack(stack).ifPresent((itemStack) -> {
                     this.playRemoveOneSound(player);

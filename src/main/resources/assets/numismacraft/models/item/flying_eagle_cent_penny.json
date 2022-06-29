@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "numismacraft:item/flying_eagle_cent_penny"
+  }
+}

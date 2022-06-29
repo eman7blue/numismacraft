@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "numismacraft:item/penny"
+    "layer0": "numismacraft:item/peace_dollar"
   }
 }

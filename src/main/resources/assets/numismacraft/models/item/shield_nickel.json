@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "numismacraft:item/nickel"
+    "layer0": "numismacraft:item/shield_nickel"
   }
 }
