@@ -1,5 +1,6 @@
 package io.github.eman7blue.numismacraft.items;
 
+import io.github.eman7blue.numismacraft.sounds.SoundsRegistry;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.ItemEntity;
@@ -7,13 +8,12 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.StackReference;
 import net.minecraft.item.*;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtElement;
 import net.minecraft.nbt.NbtList;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableTextContent;
 import net.minecraft.util.ClickType;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
@@ -26,6 +26,7 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Stream;
 
+// I really hate this item and I wish I could have an alternate way to have this
 public class CoinPurseItem extends Item{
     private static final int ITEM_BAR_COLOR = MathHelper.packRgb(0.4F, 0.4F, 1.0F);
 
@@ -34,7 +35,7 @@ public class CoinPurseItem extends Item{
     }
 
     public static float getAmountFilled(ItemStack stack) {
-        return (float)getPurseOccupancy(stack) / 64.0F;
+        return (float)getPurseOccupancy(stack) / 96.0F;
     }
 
     public boolean onStackClicked(ItemStack stack, Slot slot, ClickType clickType, PlayerEntity player) {
@@ -42,12 +43,12 @@ public class CoinPurseItem extends Item{
             return false;
         } else {
             ItemStack itemStack = slot.getStack();
-            if (itemStack.getItem().getClass().equals(ItemsRegistry.LINCOLN_PENNY.getClass()) || itemStack.isEmpty()) {
+            if (itemStack.getItem().getClass().equals(CoinItem.class) || itemStack.isEmpty()) {
                 if (itemStack.isEmpty()) {
                     this.playRemoveOneSound(player);
                     removeFirstStack(stack).ifPresent((removedStack) -> addToPurse(stack, slot.insertStack(removedStack)));
                 } else if (itemStack.getItem().canBeNested()) {
-                    int i = (64 - getPurseOccupancy(stack)) / getItemOccupancy(itemStack);
+                    int i = (96 - getPurseOccupancy(stack)) / getItemOccupancy(itemStack);
                     int j = addToPurse(stack, slot.takeStackRange(itemStack.getCount(), i, player));
                     if (j > 0) {
                         this.playInsertSound(player);
@@ -72,7 +73,6 @@ public class CoinPurseItem extends Item{
                     otherStack.decrement(i);
                 }
             }
-
             return true;
         } else {
             return false;
@@ -95,7 +95,7 @@ public class CoinPurseItem extends Item{
     }
 
     public int getItemBarStep(ItemStack stack) {
-        return Math.min(1 + 12 * getPurseOccupancy(stack) / 64, 13);
+        return Math.min(1 + 12 * getPurseOccupancy(stack) / 96, 13);
     }
 
     public int getItemBarColor(ItemStack stack) {
@@ -111,7 +111,7 @@ public class CoinPurseItem extends Item{
 
             int i = getPurseOccupancy(purse);
             int j = getItemOccupancy(stack);
-            int k = Math.min(stack.getCount(), (64 - i) / j);
+            int k = Math.min(stack.getCount(), (96 - i) / j);
             if (k == 0) {
                 return 0;
             } else {
@@ -143,7 +143,7 @@ public class CoinPurseItem extends Item{
         if (stack.isOf(ItemsRegistry.COIN_PURSE)) {
             return Optional.empty();
         } else {
-            Stream var = items.stream();
+            Stream<NbtElement> var = items.stream();
             Objects.requireNonNull(NbtCompound.class);
             var = var.filter(NbtCompound.class::isInstance);
             Objects.requireNonNull(NbtCompound.class);
@@ -157,14 +157,7 @@ public class CoinPurseItem extends Item{
         if (stack.isOf(ItemsRegistry.COIN_PURSE)) {
             return 4 + getPurseOccupancy(stack);
         } else {
-            if ((stack.isOf(Items.BEEHIVE) || stack.isOf(Items.BEE_NEST)) && stack.hasNbt()) {
-                NbtCompound nbtCompound = BlockItem.getBlockEntityNbt(stack);
-                if (nbtCompound != null && !nbtCompound.getList("Bees", 10).isEmpty()) {
-                    return 64;
-                }
-            }
-
-            return 64 / stack.getMaxCount();
+            return 96 / stack.getMaxCount();
         }
     }
 
@@ -201,14 +194,12 @@ public class CoinPurseItem extends Item{
         } else {
             if (player instanceof ServerPlayerEntity) {
                 NbtList nbtList = nbtCompound.getList("Items", 10);
-
                 for(int i = 0; i < nbtList.size(); ++i) {
                     NbtCompound nbtCompound2 = nbtList.getCompound(i);
                     ItemStack itemStack = ItemStack.fromNbt(nbtCompound2);
                     player.dropItem(itemStack, true);
                 }
             }
-
             stack.removeSubNbt("Items");
             return true;
         }
@@ -220,14 +211,14 @@ public class CoinPurseItem extends Item{
             return Stream.empty();
         } else {
             NbtList nbtList = nbtCompound.getList("Items", 10);
-            Stream steam = nbtList.stream();
+            Stream<NbtElement> stream = nbtList.stream();
             Objects.requireNonNull(NbtCompound.class);
-            return steam.map(NbtCompound.class::cast).map(nbt -> ItemStack.fromNbt((NbtCompound) nbt));
+            return stream.map(NbtCompound.class::cast).map(ItemStack::fromNbt);
         }
     }
 
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add((Text.translatable("item.minecraft.bundle.fullness", new Object[]{getPurseOccupancy(stack), 64})).formatted(Formatting.GRAY));
+        tooltip.add((Text.translatable("item.minecraft.bundle.fullness", getPurseOccupancy(stack), 96)).formatted(Formatting.GOLD));
     }
 
     public void onItemEntityDestroyed(ItemEntity entity) {
@@ -235,14 +226,14 @@ public class CoinPurseItem extends Item{
     }
 
     private void playRemoveOneSound(Entity entity) {
-        entity.playSound(SoundEvents.ITEM_BUNDLE_REMOVE_ONE, 0.8F, 0.8F + entity.getWorld().getRandom().nextFloat() * 0.4F);
+        entity.playSound(SoundsRegistry.COIN_PURSE_INSERT_EVENT, 0.8F, 0.8F + entity.getWorld().getRandom().nextFloat() * 0.4F);
     }
 
     private void playInsertSound(Entity entity) {
-        entity.playSound(SoundEvents.ITEM_BUNDLE_INSERT, 0.8F, 0.8F + entity.getWorld().getRandom().nextFloat() * 0.4F);
+        entity.playSound(SoundsRegistry.COIN_PURSE_INSERT_EVENT, 0.8F, 0.8F + entity.getWorld().getRandom().nextFloat() * 0.4F);
     }
 
     private void playDropContentsSound(Entity entity) {
-        entity.playSound(SoundEvents.ITEM_BUNDLE_DROP_CONTENTS, 0.8F, 0.8F + entity.getWorld().getRandom().nextFloat() * 0.4F);
+        entity.playSound(SoundsRegistry.COIN_PURSE_INSERT_EVENT, 0.8F, 0.8F + entity.getWorld().getRandom().nextFloat() * 0.4F);
     }
 }

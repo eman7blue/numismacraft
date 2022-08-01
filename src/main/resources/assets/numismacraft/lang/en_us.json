@@ -5,7 +5,9 @@
   "item.numismacraft.coin.tooltip_1_4": "%s",
   "item.numismacraft.coin.tooltip_1_5": "%s",
   "item.numismacraft.coin.tooltip_2": "%d %s",
+  "item.numismacraft.coin.tooltip_3": "%s",
   "item.numismacraft.coin_purse": "Coin Purse",
+  "item.numismacraft.coin_stack": "Coin Stack",
   "item.numismacraft.flying_eagle_cent_penny": "Flying Eagle Cent",
   "item.numismacraft.liberty_headdress_penny": "Indian Head Cent",
   "item.numismacraft.lincoln_penny": "Lincoln Penny",
@@ -39,5 +41,6 @@
   "item.numismacraft.saint_gaudens_double_eagle": "Saint-Gaudens Double Eagle",
   "block.numismacraft.appraisal_table": "Appraisal Table",
   "block.numismacraft.coin_bag": "Coin Bag",
-  "itemGroup.numismacraft.general": "Numismacraft"
+  "itemGroup.numismacraft.general": "Numismacraft",
+  "subtitles.numismacraft.coin_purse_insert": "Coin Clinks"
 }

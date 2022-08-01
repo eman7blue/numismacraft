@@ -1,0 +1,8 @@
+{
+  "coin_purse_insert": {
+    "subtitle": "subtitles.numismacraft.coin_purse_insert",
+    "sounds": [
+      "numismacraft:coin_purse_insert"
+    ]
+  }
+}

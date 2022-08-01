@@ -15,19 +15,25 @@ repositories {
 		name = "CottonMC"
 		url = "https://server.bbkr.space/artifactory/libs-release"
 	}
+
+	maven {
+		name = "Vazkii"
+		url = "https://maven.blamejared.com"
+	}
 }
 
 dependencies {
-	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// CottonMC LibGui to make the inventories so much easier
-	modImplementation include("io.github.cottonmc:LibGui:6.0.0-beta.5+1.19-pre1")
+	modImplementation include("io.github.cottonmc:LibGui:${project.libgui_version}")
+
+	// Patchouli is a cool mod
+	modImplementation "vazkii.patchouli:Patchouli:${project.patchouli_version}"
 }
 
 processResources {

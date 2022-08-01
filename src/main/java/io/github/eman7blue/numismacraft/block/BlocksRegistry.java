@@ -10,7 +10,7 @@ import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.item.BlockItem;
-import static io.github.eman7blue.numismacraft.items.DefModItemGroup.NUMISMACRAFT_ITEMS;
+import static io.github.eman7blue.numismacraft.items.ItemGroup.NUMISMACRAFT_ITEMS;
 
 public class BlocksRegistry {
 

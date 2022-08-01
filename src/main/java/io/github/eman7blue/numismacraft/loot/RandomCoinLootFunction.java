@@ -33,6 +33,7 @@ public class RandomCoinLootFunction extends ConditionalLootFunction {
         nbt.putInt("year", coin.year);
         nbt.putString("mint", coin.mint);
         nbt.putString("design", coin.design);
+        nbt.putString("country", coin.country);
         stack = ret;
         return ret;
     }
